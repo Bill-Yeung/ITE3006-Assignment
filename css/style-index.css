@@ -1,0 +1,45 @@
+#entry-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat; /* without no-repeat there will be several copies */
+  background-size: cover; /* scale to full screen */
+  opacity: 1;
+  transition: opacity 1.5s, transform 1.5s; /* effects to both opacity and scale */
+}
+
+#entry-photo {
+  width: 100%;
+  height: 100vh;
+}
+
+#entry-text {
+  margin: 200px 0px 100px 0px;
+  padding: 0px 20px;
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px black;
+  color:blanchedalmond;
+}
+
+#hint-button {
+  width: 400px;
+  padding: 20px;
+  border: 0px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #c6cccd, white);
+  font-size: 40px;
+  font-weight: bold;
+  color: grey;
+  opacity: 0.9;
+  transition: transform 0.5s;
+}
+
+#hint-button:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+

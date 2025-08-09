@@ -1,0 +1,161 @@
+#main-section {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+#story-form {
+  border-radius: 16px;
+  background: white;
+  box-shadow: 5px 5px 5px lightgrey;
+}
+
+#form-header {
+  padding: 40px;
+  background: linear-gradient(to right,#3F5EFB, #FC466B);
+  text-align: center;
+  color: white;
+}
+
+#form-header h1 {
+  margin: 0px 10px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#form-para {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 20px;
+  border-left: 4px solid #3F5EFB;
+  border-radius: 12px;
+  background: linear-gradient(to right,#3f5efb2c, #fc466a4f);
+}
+
+#form {
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.half-row {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 98%;
+  padding: 12px 15px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  transition: all 0.5s;
+}
+
+input[id="name"],
+input[id="email"] {
+  width: 90%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3F5EFB;
+  outline: none;
+}
+
+#file-container {
+  padding: 30px;
+  border: 2px dashed lightgrey;
+  border-radius: 10px;
+  background: #f9f9f9;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+#file-container:hover {
+  border-color: #3F5EFB;
+  background: #1a29800d;
+}
+
+#file-label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  font-size: 14px;
+  color: grey;
+}
+
+#terms-container {
+  margin: 25px 0px;
+}
+
+#terms-container label {
+  display: flex;
+  flex-direction: row;
+  font-weight: normal;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+#btn-submit, #btn-reset {
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+#btn-submit {
+  background: linear-gradient(to right,#3F5EFB, #FC466B);
+  color: white;
+}
+
+#btn-reset {
+  background: lightgrey;
+  color: grey;
+}
+
+#btn-submit:hover {
+  transform: translateY(-3px);
+}
+
+#btn-reset:hover {
+  transform: translateY(-3px);
+}

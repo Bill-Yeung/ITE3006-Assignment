@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <base>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore Hong Kong through captivating stories and experiences. Discover the best attractions, food, and adventures shared by travelers.">
+        <meta name="keywords" content="Hong Kong, Travel, Stories, Attractions, Food, Dim Sum, Victoria Harbour, Hiking, Tourism">
+        <meta name="author" content="Chan Chi Kin(240064782), Yeung Wang Sang(240021235)">
+        <link rel="icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link rel="shortcut icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link id="general-css" rel="stylesheet" href="css/style-general.css">
+        <link id="inquiry-css" rel="stylesheet" href="css/style-inquiry.css">
+        <title>Hong Kong Tour Guide | Inquiry</title>
+    </head>
+
+    <body>
+
+        <div id="main-page">
+
+            <div id="header"></div>          
+
+            <div id="main-section">
+
+                <div id="inquiry-form">
+
+                    <div id="form-header">
+                        <h1>Submit Inquiry</h1>
+                        <p id="subtitle">Have questions about your Hong Kong trip? We are here to help!</p>
+                    </div>
+                    
+                    <form id="form" name="form" onsubmit="sendInquiry()">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" pattern="[A-Za-z]+" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half-row">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone" pattern="[0-9]{8,16}">
+                            </div>
+                            <div class="form-group half-row">
+                                <label for="inquiryType">Type of Inquiry</label>
+                                <select name="inquiryType" id="inquiryType" required>
+                                    <option value="">Select type</option>
+                                    <option value="general">General question</option>
+                                    <option value="spots">Tourist spots</option>
+                                    <option value="tips">Travel tips</option>
+                                    <option value="feedback">Feedback</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Travel Period (Optional)</label>
+                            <div id="date-inputs">
+                                <input type="date" id="start-date" name="startDate">
+                                <span id="separator">to</span>
+                                <input type="date" id="end-date" name="endDate">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="question">Your Question</label>
+                            <textarea id="question" name="question" placeholder="What would you like to know about Hong Kong?" rows="6" required></textarea>
+                        </div>
+                        
+                        <div id="button-container">
+                            <button type="submit" id="btn-submit">Submit Your Inquiry</button>
+                            <button type="reset" id="btn-reset">Clear Form</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <footer id="footer"></footer>
+
+            <div id="tools"></div>
+
+        </div>
+        
+        <script src="script/script-general.js"></script>
+        <script src="script/script-inquiry.js"></script>
+
+    </body>
+
+</html>

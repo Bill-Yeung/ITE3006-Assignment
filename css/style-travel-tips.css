@@ -1,0 +1,203 @@
+#main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+#tips-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#tips-header h1 {
+  position: relative; /* for :after */
+  margin-bottom: 15px;
+  font-size: 36px;
+  color: #9246fc;
+}
+
+#tips-header h1:after {
+  content: '';
+  position: absolute;
+  left: 50%; /* together make it at center */
+  bottom: -10px;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(to right,#3F5EFB, #FC466B);
+  transform: translateX(-50%); /* together make it at center */
+}
+
+#subtitle {
+  margin-top: 30px;
+  font-size: 18px;
+  color: black;
+}
+
+#tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.tip-card {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  border-top: 4px solid #9246fc;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 5px 5px 5px lightgrey;
+  transition: transform 0.5s;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-icon img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.tip-content h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.tip-content p {
+  margin-bottom: 15px;
+  line-height: 1.8em;
+  color: grey;
+}
+
+.tip-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #9246fc;
+}
+
+.tip-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#calculator-container {
+  display: none;
+  max-width: 1000px;
+  height: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-top: 4px solid #9246fc;
+  border-radius: 12px;
+  background-color: white;
+}
+
+#calculator-close {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#calculator-close img {
+  width: 25px;
+  height: 25px;
+  background-color: pink;
+}
+
+#calculator-header h2 {
+  position: relative; /* for :after */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: linear-gradient(to right,#3F5EFB, #FC466B);
+  font-size: 32px;
+  text-align: center;
+  color: white;
+}
+
+#calculator-header h2:after {
+  content: "";
+  position: absolute;
+  left: 50%; /* together make it at center */
+  bottom: -10px;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right,#3F5EFB, #FC466B);
+  transform: translateX(-50%); /* together make it at center */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 15px;
+  border-bottom: 2px solid lightgrey;
+  font-size: 16px;
+  text-align: left;
+  color: #9246fc;
+}
+
+table td {
+  padding: 15px;
+  border-bottom: 1px solid lightgrey;
+  font-size: 16px;
+}
+
+.last-col {
+  font-weight: bold;
+  text-align: right;
+}
+
+#last-row {
+  background: #0048ff0d;
+}
+
+#total {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  color: #9246fc;
+}
+
+input[type="number"] {
+  width: 90%;
+  padding: 8px 12px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input[type="number"]:focus {
+  border-color: #9246fc;
+  outline: none;
+}
+
+#button-container {
+  padding: 20px;
+  text-align: center;
+}
+
+#btn-reset {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: lightgrey;
+  font-size: 14px;
+  color: black;
+  transition: all 0.5s;
+}
+
+#btn-reset:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}

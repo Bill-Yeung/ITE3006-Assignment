@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <base>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore Hong Kong through captivating stories and experiences. Discover the best attractions, food, and adventures shared by travelers.">
+        <meta name="keywords" content="Hong Kong, Travel, Stories, Attractions, Food, Dim Sum, Victoria Harbour, Hiking, Tourism">
+        <meta name="author" content="Chan Chi Kin(240064782), Yeung Wang Sang(240021235)">
+        <link rel="icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link rel="shortcut icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link id="general-css" rel="stylesheet" href="css/style-general.css">
+        <link id="travel-tip-css" rel="stylesheet" href="css/style-travel-tips.css">
+        <title>Hong Kong Tour Guide | Travel Tips</title>
+    </head>
+
+    <body>
+
+        <div id="main-page">
+
+            <div id="header"></div>
+
+            <div id="main-section">
+
+                <div id="tips-header">
+                    <h1>Travel Tips for Hong Kong</h1>
+                    <p id="subtitle">Information to make your trip smooth and enjoyable</p>
+                </div>
+
+                <div id="tips-container">
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <img src="img/tips/language.svg">
+                        </div>
+                        <div class="tip-content">
+                            <h3>Language</h3>
+                            <p>Commonly used languages are Chinese (Cantonese), Chinese (Putonghua) and English.</p>
+                        </div>
+                    </div>
+    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <img src="img/tips/transport.svg">
+                        </div>
+                        <div class="tip-content">
+                            <h3>Transportation</h3>
+                            <p>The MTR is a convenient way to get around the city. Buses, trams, and ferries are also affordable options.</p>
+                            <a href="https://www.mtr.com.hk/mtrmobile/en/" class="tip-link">Download the MTR mobile app</a>
+                        </div>
+                    </div>
+    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <img src="img/tips/weather.svg">
+                        </div>
+                        <div class="tip-content">
+                            <h3>Weather</h3>
+                            <p>Hong Kong has a subtropical climate, so be prepared for hot and humid summers and mild winters.</p>
+                            <a href="https://www.hko.gov.hk/en/index.html" class="tip-link">Check the latest weather</a>
+                        </div>
+                    </div>
+    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <img src="img/tips/culture.svg">
+                        </div>
+                        <div class="tip-content">
+                            <h3>Culture</h3>
+                            <p>Respect local customs and traditions, especially when visiting temples or religious sites.</p>
+                        </div>
+                    </div>
+    
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <img src="img/tips/payment.svg">
+                        </div>
+                        <div class="tip-content">
+                            <h3>Payment Methods</h3>
+                            <p>Credit cards are widely accepted, but carry some cash for small purchases. The Octopus card is essential for public transport and many shops.</p>
+                            <a href="https://apps.apple.com/us/app/octopus-for-tourists/id1505492952" class="tip-link">Get the Octopus app for tourists</a>
+                        </div>
+                    </div>
+
+                    <div class="tip-card">
+                        <div class="tip-icon">
+                            <img src="img/tips/budget.svg">
+                        </div>
+                        <div class="tip-content">
+                            <h3>Budget Calculator</h3>
+                            <p>Plan the expenses for your Hong Kong trips</p>
+                            <a class="tip-link" onclick="openBudgetCalculator()">Get Budget Calculator app</a>
+                        </div>
+                    </div>
+
+                </div>
+    
+                <div id="calculator-container">
+
+                    <div id="calculator-header">
+                        <div id="calculator-close" onclick="closeBudgetCalculator()"><img src="img/close.svg"></div>
+                        <h2>Trip Budget Calculator</h2>
+                    </div>
+    
+                    <div id="calculator-content">
+
+                        <form id="budget-form" oninput="total1.value = (parseInt(q1a.value) || 0) * (parseInt(q1b.value) || 0);
+                                                        total2.value = (parseInt(q2a.value) || 0) * (parseInt(q2b.value) || 0);
+                                                        total3.value = (parseInt(q3a.value) || 0) * (parseInt(q3b.value) || 0);
+                                                        total4.value = (parseInt(q4a.value) || 0) * (parseInt(q4b.value) || 0);
+                                                        total5.value = (parseInt(q5a.value) || 0) * (parseInt(q5b.value) || 0);
+                                                        total6.value = (parseInt(q6a.value) || 0) * (parseInt(q6b.value) || 0);
+                                                        total7.value = (parseInt(q7a.value) || 0) * (parseInt(q7b.value) || 0);
+                                                        total8.value = (parseInt(q8a.value) || 0) * (parseInt(q8b.value) || 0);
+                                                        overallTotal.value = parseInt(total1.value) + parseInt(total2.value) + 
+                                                                             parseInt(total3.value) + parseInt(total4.value) + 
+                                                                             parseInt(total5.value) + parseInt(total6.value) + 
+                                                                             parseInt(total7.value) + parseInt(total8.value);">
+
+                            <table>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Sub-total</th>
+                                </tr>
+                                <tr>
+                                    <td>Air ticket</td>
+                                    <td><input type="number" min="0" id="q1a"></td>
+                                    <td><input type="number" min="0" id="q1b"></td>
+                                    <td class="last-col"><output name="total1" for="q1a q1b">0</output></td>
+                                </tr>
+                                <tr>
+                                    <td>Local transport</td>
+                                    <td><input type="number" min="0" id="q2a"></td>
+                                    <td><input type="number" min="0" id="q2b"></td>
+                                    <td class="last-col"><output name="total2" for="q2a q2b">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Accommodation</td>
+                                    <td><input type="number" min="0" id="q3a"></td>
+                                    <td><input type="number" min="0" id="q3b"></td>
+                                    <td class="last-col"><output name="total3" for="q3a q3b">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Food & beverage</td>
+                                    <td><input type="number" min="0" id="q4a"></td>
+                                    <td><input type="number" min="0" id="q4b"></td>
+                                    <td class="last-col"><output name="total4" for="q4a q4b">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Tickets</td>
+                                    <td><input type="number" min="0" id="q5a"></td>
+                                    <td><input type="number" min="0" id="q5b"></td>
+                                    <td class="last-col"><output name="total5" for="q5a q5b">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Shopping</td>
+                                    <td><input type="number" min="0" id="q6a"></td>
+                                    <td><input type="number" min="0" id="q6b"></td>
+                                    <td class="last-col"><output name="total6" for="q6a q6b">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Communication</td>
+                                    <td><input type="number" min="0" id="q7a"></td>
+                                    <td><input type="number" min="0" id="q7b"></td>
+                                    <td class="last-col"><output name="total7" for="q7a q7b">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Miscellaneous</td>
+                                    <td><input type="number" min="0" id="q8a"></td>
+                                    <td><input type="number" min="0" id="q8b"></td>
+                                    <td class="last-col"><output name="total8" for="q8a q8b">0</td>
+                                </tr>
+                                <tr id="last-row">
+                                    <td></td>
+                                    <td></td>
+                                    <td id="total">Total:</td>
+                                    <td class="last-col"><output name="overallTotal" for="total1 total2 total3 total4 total5 total6 total7 total8">0</td>
+                                </tr>
+                            </table>
+                            
+                            <div id="button-container">
+                                <button type="reset" id="btn-reset">Reset Calculator</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer id="footer"></footer>
+
+            <div id="tools"></div>
+
+        </div>
+
+        <script src="script/script-general.js"></script>
+        <script src="script/script-travel-tips.js"></script>
+
+    </body>
+
+</html>

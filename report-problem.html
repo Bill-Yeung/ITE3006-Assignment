@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <base>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore Hong Kong through captivating stories and experiences. Discover the best attractions, food, and adventures shared by travelers.">
+        <meta name="keywords" content="Hong Kong, Travel, Stories, Attractions, Food, Dim Sum, Victoria Harbour, Hiking, Tourism">
+        <meta name="author" content="Chan Chi Kin(240064782), Yeung Wang Sang(240021235)">
+        <link rel="icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link rel="shortcut icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link id="general-css" rel="stylesheet" href="css/style-general.css">
+        <link id="report-problem-css" rel="stylesheet" href="css/style-report-problem.css">
+        <title>Hong Kong Tour Guide | Report Problem</title>
+    </head>
+
+    <body>
+
+        <div id="main-page">
+
+            <div id="header"></div>          
+
+            <div id="main-section">
+
+                <div id="report-form">
+
+                    <div id="form-header">
+                        <h1>Report a Problem</h1>
+                        <p id="subtitle">Help us improve user experience by reporting issues!</p>
+                    </div>
+                    
+                    <form id="form">
+
+                        <div class="form-group">
+                            <label>Problem Type</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="wrong-info" name="problem" value="wrong-info">
+                                    <label for="wrong-info">Outdated or incorrect information</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="website-problem" name="problem" value="website-problemm">
+                                    <label for="website-problem">Technical or website functionality issues</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="security-issue" name="problem" value="security-issue">
+                                    <label for="security-issue">Security concern</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="content-issue" name="problem" value="content-issue">
+                                    <label for="content-issue">Inappropriate content</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="other-issue" name="problem" value="other-issue" checked>
+                                    <label for="other-issue">Other issues</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="problem">Detailed Issue</label>
+                            <textarea id="problem" name="problem" placeholder="Please explain the issues in details ..." rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="file">Screenshot (Optional)</label>
+                            <div id="file-container">
+                                <label id="file-label">
+                                    <input type="file" id="file" name="file" accept="image/*" multiple>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div id="button-container">
+                            <button type="submit" id="btn-submit">Submit Report</button>
+                            <button type="reset" id="btn-reset">Clear Form</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <footer id="footer"></footer>
+
+            <div id="tools"></div>
+
+        </div>
+        
+        <script src="script/script-general.js"></script>
+
+    </body>
+
+</html>

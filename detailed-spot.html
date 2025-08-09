@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <base>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore Hong Kong through captivating stories and experiences. Discover the best attractions, food, and adventures shared by travelers.">
+        <meta name="keywords" content="Hong Kong, Travel, Stories, Attractions, Food, Dim Sum, Victoria Harbour, Hiking, Tourism">
+        <meta name="author" content="Chan Chi Kin(240064782), Yeung Wang Sang(240021235)">
+        <link rel="icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link rel="shortcut icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link id="general-css" rel="stylesheet" href="css/style-general.css">
+        <link id="detailed-spot-css" rel="stylesheet" href="css/style-detailed-spot.css">
+        <title>Hong Kong Tour Guide | Spot</title>
+    </head>
+
+    <body>
+
+        <div id="main-page">
+
+            <div id="header"></div>          
+
+            <div id="main-section">
+
+                <div id="spot-header">
+                    <h1 id="title"></h1>
+                </div>
+                
+                <div id="spot-intro">
+                    <div id="media-info">
+                        <img id="img" src="">
+                        <iframe id="video" src=""></iframe>
+                    </div>
+                    <div id="spot-info">
+                        <h2>Tourist information</h2>
+                        <p><strong>District: </strong><label id="district"></label></p>
+                        <p><strong>Entry Fee: </strong><label id="entry-fee"></label></p>
+                        <p><strong>Star Rating: </strong><label id="star-rating"></label></p>
+                        <p><strong>Official Website: </strong><a id="website" href=""></a></p>
+                    </div>
+                </div>
+
+                <br><br><br><hr style="width:80%">
+
+                <div id="spot-details">
+                    <div id="spot-details-left">
+                        <h2>Address:</h2>
+                        <p id="address"></p>
+                        <iframe id="gmap" src=""></iframe>
+                        <h2>Operating Hours:</h2>
+                        <table>
+                            <tr>
+                                <td>Monday - Friday:</td>
+                                <td id="mon-fri"></td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday:</td>
+                                <td id="sat-sun"></td>
+                            </tr>
+                            <tr>
+                                <td>Holiday:</td>
+                                <td id="holiday"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="spot-details-right">
+                        <h2>Description:</h2>
+                        <p id="desc"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer id="footer"></footer>
+
+            <div id="tools"></div>
+
+        </div>
+
+        <!-- data for spots -->
+        <script src="script/data-spots.js"></script>
+        
+        <script src="script/script-general.js"></script>
+        <script src="script/script-detailed-spot.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <base>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore Hong Kong through captivating stories and experiences. Discover the best attractions, food, and adventures shared by travelers.">
+        <meta name="keywords" content="Hong Kong, Travel, Stories, Attractions, Food, Dim Sum, Victoria Harbour, Hiking, Tourism">
+        <meta name="author" content="Chan Chi Kin(240064782), Yeung Wang Sang(240021235)">
+        <link rel="icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link rel="shortcut icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link id="general-css" rel="stylesheet" href="css/style-general.css">
+        <link id="submit-stories-css" rel="stylesheet" href="css/style-submit-stories.css">
+        <title>Hong Kong Tour Guide | Submit Story</title>
+    </head>
+
+    <body>
+
+        <div id="main-page">
+
+            <div id="header"></div>
+
+            <div id="main-section">
+
+                <div id="story-form">
+
+                    <div id="form-header">
+                        <h1>Share your stories with Travelers</h1>
+                    </div>
+
+                    <div id="form-para">
+                        <p>What to share with us the stories of your fantastic journey?</p>
+                        <p>Fill out the form below and we will pick the interesting ones to share with travellers!</p>
+                    </div>
+
+                    <form id="form" name="form">
+
+                        <div class="form-group">
+                            <label for="title">Story title</label>
+                            <input type="text" id="title" name="title" placeholder="Give your story a title" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="story">Your story</label>
+                            <textarea id="story" name="story" rows="8" placeholder="Tell us about your experience in Hong Kong ..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="file">Add photos (up to 3)</label>
+                            <div id="file-container">
+                                <label id="file-label">
+                                    <input type="file" id="file" name="file" accept="image/*" multiple>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group half-row">
+                                <label for="name">Your name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group half-row">
+                                <label for="email">Email address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                        </div>
+
+                        <div id="terms-container">
+                            <label>
+                                <input type="checkbox" required>
+                                <span>I agree to share my story and photos on Hong Kong Tour Guide.</span>
+                            </label>
+                        </div>
+
+                        <div id="button-container">
+                            <button type="submit" id="btn-submit">Submit Your Story</button>
+                            <button type="reset" id="btn-reset">Clear Form</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <footer id="footer"></footer>
+
+            <div id="tools"></div>
+
+        </div>
+
+        <script src="script/script-general.js"></script>
+
+    </body>
+
+</html>

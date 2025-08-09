@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <base>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Explore Hong Kong through captivating stories and experiences. Discover the best attractions, food, and adventures shared by travelers.">
+        <meta name="keywords" content="Hong Kong, Travel, Stories, Attractions, Food, Dim Sum, Victoria Harbour, Hiking, Tourism">
+        <meta name="author" content="Chan Chi Kin(240064782), Yeung Wang Sang(240021235)">
+        <link rel="icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link rel="shortcut icon" href="img/logo/logo4.png" type="image/png" alt="Website Logo">
+        <link id="general-css" rel="stylesheet" href="css/style-general.css">
+        <link id="home-css" rel="stylesheet" href="css/style-home.css">
+        <title>Hong Kong Tour Guide | Home</title>
+    </head>
+
+    <body>
+ 
+        <div id="main-page">
+
+            <div id="header"></div>
+            
+            <div id="main-section">
+
+                <div id="image-section">
+
+                    <div id="image-place">
+
+                        <div id="pic1">
+                            <img id="left-arrow" src="img/gallery/left-arrow-direction.svg" onclick="previousImage()">
+                            <img id="img1" onclick="loadSpotFromImage(this)">
+                        </div>
+                        <div id="pic2">
+                            <img id="img2" onclick="loadSpotFromImage(this)">
+                        </div>
+                        <div id="pic3">
+                            <img id="right-arrow" src="img/gallery/right-arrow-direction.svg" onclick="nextImage()">
+                            <img id="img3" onclick="loadSpotFromImage(this)">
+                        </div>
+
+                    </div>
+    
+                </div>
+    
+                <div id="blog-section">
+    
+                    <div id="blog-header">
+                        <h1>Discover Stories in Hong Kong</h1>
+                        <p>Wish you have a wonderful journey!</p>
+                    </div>
+                      
+
+                    <div id="blog-posts">
+
+                        <div class="blog-card">
+                            <div class="img-container">
+                                <img src="img/blogs/dim-sum.jpg">
+                            </div>
+                            <div class="blog-content">
+                                <h2>Dim Sum is delicious!</h2>
+                                <p>I love the dim sum in Hong Kong. They really taste good! ...</p>
+                                <a class="link" onclick="openPopUpStory('dim-sum')">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="img-container">
+                                <img src="img/places/spots/victoria-harbour.jpg">
+                            </div>
+                            <div class="blog-content">
+                                <h2>Pearl of the Orient ~</h2>
+                                <p>The harbour view is the best view I have ever seen ...</p>
+                                <a class="link" onclick="openPopUpStory('orient-pearl')">Read More</a>
+                            </div>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="img-container">
+                                <img src="img/blogs/mountain.jpg">
+                            </div>
+                            <div class="blog-content">
+                                <h2>Mountain view here is beautiful!</h2>
+                                <p>Last week I have go hiking with my buddies in Hong Kong ...</p>
+                                <a class="link" onclick="openPopUpStory('mountain')">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                      
+
+                    <div id="blog-submit">
+                        <p>Have an amazing story to share? We would love to hear from you!</p>
+                        <a id="submit-story" href="submit-stories.html">Submit Your Stories</a>
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div id="story-section">
+
+                <div id="story-header">
+                    <div id="story-close" onclick="closePopUpStory()"><img src="img/close.svg"></div>
+                    <h1 id="story-title"></h1>
+                    <h2 id="story-author"></h2>
+                </div>
+
+                <div id="story-content">
+                    <img id="story-image"></h1>
+                    <p id="story-body"></p>
+                </div>
+
+            </div>
+
+            <footer id="footer"></footer>
+
+            <div id="tools"></div>
+
+        </div>
+
+        <!-- data for spots -->
+        <script src="script/data-spots.js"></script>
+        <!-- data for stories -->
+        <script src="script/data-stories.js"></script> 
+        
+        <script src="script/script-general.js"></script>
+        <script src="script/script-home.js"></script>
+
+    </body>
+    
+</html>
+
+
